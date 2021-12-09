@@ -1,0 +1,38 @@
+:root {
+    --theme-color: rgb(114, 9, 201);
+    --border-roundness: .3rem;
+}
+
+.bd-bottom {
+    border-bottom: solid .2rem var(--theme-color);
+}
+@media only screen and (min-width: 1210px) {
+    nav.top {
+        height: 4rem;
+    }
+}
+
+nav.top ul li a, nav.top ul li a:visited, nav.top ul li ul li a {
+    display: flex;
+    align-items: center;
+    min-width: 6rem;
+    padding: .5rem;
+    margin: .5rem 1rem;
+    border-radius: 1rem;
+    background-color: none;
+    text-decoration: none;
+    transition: all .5s ease;
+    justify-content: center;
+}
+nav.top ul li a:hover, nav.top ul li ul li a:hover {
+    border: solid .1rem white;
+    border-radius: var(--border-roundness);
+}
+
+
+nav.top ul li a span {
+    padding-left: none;
+    color: var(--menu-text-color);
+    transition: opacity .5s ease;
+    opacity: 100%;
+}

@@ -1,0 +1,19 @@
+{
+    "contributers": [
+        {
+            "name": "Saltylelele",
+            "position": "Founder",
+            "img" : "imgurl",
+            "links" : [
+                {
+                    "type" : "Github",
+                    "url" : "https://github.com/AtherActive"
+                },
+                {
+                    "type" : "Twitter",
+                    "url" : "twitter.com/saltylelele"
+                }
+            ]
+        }
+    ]
+}

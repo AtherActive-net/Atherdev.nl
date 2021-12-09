@@ -1,0 +1,174 @@
+/*
+@media only screen and (max-width: 1200px) {
+    div.row {
+        flex-direction: column;
+        transition: all 0.2s;
+    }
+    /*
+    div.col.s75,
+    div.col.s66,
+    div.col.s50,
+    div.col.s33,
+    div.col.s25 {
+        width: 100%;
+    }
+}*/
+
+@media only screen and (min-width: 100px) and (max-width: 575px) {
+    div.row {
+        flex-direction: row;
+    }
+    div.none {display:block}
+    div.col.xs-s100 {width: 100%;}
+    div.col.xs-s75 {width: 75%;}
+    div.col.xs-s66 {width: calc(100%/3*2);}
+    div.col.xs-s50 {width: 50%;}
+    div.col.xs-s33 {width: calc(100%/3);}
+    div.col.xs-s25 {width: 25%;}
+    div.col.xs-none {display: none;}
+
+    div.none {display:block}
+    div.col.xs100 {width: 100%;}
+    div.col.xs75 {width: 75%;}
+    div.col.xs66 {width: calc(100%/3*2);}
+    div.col.xs50 {width: 50%;}
+    div.col.xs33 {width: calc(100%/3);}
+    div.col.xs25 {width: 25%;}
+    div.col.xsnone {display: none;}
+
+    h1 {font-size: 1.4rem;}
+    h2 {font-size: 1.2rem;}
+    h3 {font-size: .1rem;}
+    h4 {font-size: .8rem;}
+
+    html, body {
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    div.row {
+        flex-direction: row;
+        transition: all 0.2s;
+    }
+
+    div.none {display:block}
+    div.col.s-s100 {width: 100%;}
+    div.col.s-s75 {width: 75%;}
+    div.col.s-s66 {width: calc(100%/3*2);}
+    div.col.s-s50 {width: 50%;}
+    div.col.s-s33 {width: calc(100%/3);}
+    div.col.s-s25 {width: 25%;}
+    div.col.s-none {display: none;}
+
+/* Refactored version */
+    div.none {display:block}
+    div.col.s100 {width: 100%;}
+    div.col.s75 {width: 75%;}
+    div.col.s66 {width: calc(100%/3*2);}
+    div.col.s50 {width: 50%;}
+    div.col.s33 {width: calc(100%/3);}
+    div.col.s25 {width: 25%;}
+    div.col.snone {display: none;}
+
+    h1 {font-size: 1.4rem;}
+    h2 {font-size: 1.2rem;}
+    h3 {font-size: .1rem;}
+    h4 {font-size: .8rem;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    div.row {
+        flex-direction: row;
+        transition: all 0.2s;
+    }
+    div.none {display:block}
+    div.col.m-s100 {width: 100%;}
+    div.col.m-s75 {width: 75%;}
+    div.col.m-s66 {width: calc(100%/3*2);}
+    div.col.m-s50 {width: 50%;}
+    div.col.m-s33 {width: calc(100%/3);}
+    div.col.m-s25 {width: 25%;}
+    div.col.m-none {display: none;}
+
+    /* Refactored version */
+    div.none {display:block}
+    div.col.m100 {width: 100%;}
+    div.col.m75 {width: 75%;}
+    div.col.m66 {width: calc(100%/3*2);}
+    div.col.m50 {width: 50%;}
+    div.col.m33 {width: calc(100%/3);}
+    div.col.m25 {width: 25%;}
+    div.col.mnone {display: none;}
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1199px) {
+            /* menu edits == Switches to Phone mode from here on out */
+            nav {
+                transition: all 1s;
+                height: auto;
+                flex-direction: column;
+            }
+            nav.top {
+                bottom: 0;
+                justify-content: space-between;
+            }
+            nav.top ul li,
+            nav.top ul li a {
+                width: 100%;
+                margin-top: .1rem;
+                margin-bottom: .1rem;
+            }
+            nav.top ul,
+            nav.top ul.between,
+            nav.top ul.around {
+                overflow: hidden;
+                transition: all 1s ease;
+                max-height: 0px;
+                max-width: 1px;
+                flex-direction: column;
+                margin-bottom: .5rem;
+            }
+            nav.top a#mobile {
+                display: flex;
+                position: fixed;
+                top: 0;
+                right: 1vw;
+                margin: 0;
+                margin-top: .2rem;
+                padding: .4rem;
+            }
+            nav.top a#mobile[pressed] {
+                transition: all .5s ease;
+                justify-content: center;
+                transform: rotate(180deg)
+            }
+
+
+            nav.top[open] {
+                transition: all .5s ease;
+            }
+            nav.top ul[open] {
+                transition: all 1s ease;
+                max-height: 1000px;
+                max-width: 100%;
+            }
+
+            nav.top ul li ul {
+                height: 0;
+                margin-left: 1rem;
+                right: inherit;
+                height: 0;
+            }
+            nav.top ul li:hover ul {
+                height: max-content;
+                right: inherit;
+                opacity: 1;
+                display: block;
+                position: static;
+                width: 50%;
+                transition: all .5s;
+            }
+            
+}
